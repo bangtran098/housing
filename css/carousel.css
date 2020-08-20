@@ -1,0 +1,61 @@
+.carousel {
+}
+
+
+.carousel__content {
+    position: relative;
+}
+
+.carousel__image {
+    max-width: 100%;
+    height: 720px;
+}
+
+.carousel__image .square1_prev_image {
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+    z-index: 200;
+    background-image: url("../img/left-arrow.png");
+}
+
+.carousel__image .square1_next_image {
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+    z-index: 200;
+    transform: translate(0,-50%);
+    background-image: url("../img/right-arrow.png");
+}
+
+.carousel__content .square1_dots{
+    position: absolute;
+    bottom: 15%;
+    z-index: 200;
+}
+
+.square1_dots span:before {
+    background-color: white;
+}
+
+.carousel .carousel__text {
+    color: white;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%; 
+    transform: translate(-45%,0); 
+    z-index:1000;
+}
+
+.carousel .carousel__text h2 {
+    font-size: 2.6rem;
+}
+
+.carousel .carousel__text p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #b8bdbd;
+    font-weight: 600;
+}

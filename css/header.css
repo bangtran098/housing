@@ -1,0 +1,65 @@
+header {
+    position: fixed;
+    right:0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+.header__content {
+    color: white;
+    height: 60px;
+    background-color: #1c2021;
+    position: relative;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+header h2 span {
+    color: #06abac;
+}
+
+header nav {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+nav ul li {
+    margin: 5px 10px;
+    padding: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li::after {
+    content: "";
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    margin-top: 8px;
+    display: block;
+
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+}
