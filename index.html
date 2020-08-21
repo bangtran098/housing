@@ -13,6 +13,8 @@
         rel="stylesheet">
     <!-- SQUARE -->
     <link rel="stylesheet" type="text/css" href="libraries/Square/css/square1.min.css">
+    <!-- LIGHTBOX -->
+    <link rel="stylesheet" type="text/css" href="libraries/lightbox2/css/lightbox.min.css">
     <!-- EXTERNAL CSS -->
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/component/button.css">
@@ -24,9 +26,10 @@
     <link rel="stylesheet" type="text/css" href="css/blog.css">
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <link rel="stylesheet" type="text/css" href="css/subscribe.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css.agents">
+    <link rel="stylesheet" type="text/css" href="css/agents.css">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
 
     <title>Document</title>
 </head>
@@ -36,18 +39,18 @@
         <div class="header__content">
             <h2>Hous<span>ing</span></h2>
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Agents</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="mainNav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="carousel">
+    <section class="carousel" id="carousel">
         <div class="carousel__content">
             <div class="carousel__image">
                 <img src="img/b1.jpg" alt="" />
@@ -61,7 +64,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <h2>About</h2>
         <div class="about__list">
             <div class="about__item">
@@ -89,28 +92,28 @@
                 officiis ipsa impedit?</p>
         </div>
     </section>
-    <section class="stats">
+    <section class="stats" id="stats">
         <h2>Stats</h2>
         <div class="stats__number">
             <div class="stats__item">
-                <p>245</p>
+                <p class="counter">245</p>
                 <p>clients</p>
             </div>
             <div class="stats__item">
-                <p>46</p>
+                <p class="counter">46</p>
                 <p>Plans</p>
             </div>
             <div class="stats__item">
-                <p>71</p>
+                <p class="counter">71</p>
                 <p>projects</p>
             </div>
             <div class="stats__item">
-                <p>71</p>
+                <p class="counter">71</p>
                 <p>Likes</p>
             </div>
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
         <h2>Blog</h2>
         <div class="blog__list-vertical">
             <figure class="blog__item-vertical">
@@ -159,43 +162,157 @@
             </figure>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
         <div class="portfolio__list">
-            <figure class="portfolio__item">
-                <img src="img/img1.jpg" alt="">
+            <figure class="portfolio__item ">
+                <a href="img/img1.jpg" data-lightbox="roadtrip">
+                    <img src="img/img1.jpg" alt=""> 
+                </a>
             </figure>
             <figure class="portfolio__item">
-                <img src="img/img2.jpg" alt="">
+                <a href="img/img2.jpg" data-lightbox="roadtrip">
+                    <img src="img/img2.jpg" alt="">
+                </a>
             </figure>
             <figure class="portfolio__item">
-                <img src="img/img3.jpg" alt="">
+                <a href="img/img3.jpg" data-lightbox="roadtrip">
+                    <img src="img/img3.jpg" alt="">
+                </a>
             </figure>
             <figure class="portfolio__item">
-                <img src="img/img4.jpg" alt="">
+                <a href="img/img4.jpg" data-lightbox="roadtrip">
+                    <img src="img/img4.jpg" alt="">
+                </a>
             </figure>
             <figure class="portfolio__item">
-                <img src="img/img5.jpg" alt="">
+                <a href="img/img5.jpg" data-lightbox="roadtrip">
+                    <img src="img/img5.jpg" alt="">
+                </a>
             </figure>
             <figure class="portfolio__item">
-                <img src="img/img6.jpg" alt="">
+                <a href="img/img6.jpg" data-lightbox="roadtrip">
+                    <img src="img/img6.jpg" alt="">
+                </a>
             </figure>
         </div>
     </section>
-    <section class="subscribe">
+    <section class="subscribe" id="subscribe">
         <h2>Subscribe</h2>
         <div class="subscribe__content">
-            <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam assumenda accusamus harum inventore deserunt ut velit vitae sapiente nihil blanditiis.</p>
-            <input type="text">
+            <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam assumenda
+                accusamus harum inventore deserunt ut velit vitae sapiente nihil blanditiis.</p>
+            <input type="email" placeholder="Email">
             <button>Click</button>
         </div>
     </section>
-    <section class="agents"></section>
-    <section class="contact"></section>
-    <footer></footer>
+    <section class="agents" id="agents">
+        <h2>Our Agents</h2>
+        <div class="agents__list">
+            <figure class="agents__member">
+                <img src="img/t1.jpg" alt="">
+                <figcaption>
+                    <p>KAT WALLY</p>
+                    <p>Lorem, ipsum.</p>
+                    <div class="agents__member-social">
+                        <a href="#agents"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#agents"><i class="fab fa-twitter"></i></a>
+                        <a href="#agents"><i class="fa fa-rss"></i></a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="agents__member">
+                <img src="img/t4.jpg" alt="">
+                <figcaption>
+                    <p>JOHN MAX</p>
+                    <p>Lorem, ipsum.</p>
+                    <div class="agents__member-social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fa fa-rss"></i>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="agents__member">
+                <img src="img/t2.jpg" alt="">
+                <figcaption>
+                    <p>ROY KENT</p>
+                    <p>Lorem, ipsum.</p>
+                    <div class="agents__member-social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fa fa-rss"></i>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="agents__member">
+                <img src="img/t3.jpg" alt="">
+                <figcaption>
+                    <p>JOY IDSON</p>
+                    <p>Lorem, ipsum.</p>
+                    <div class="agents__member-social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fa fa-rss"></i>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="map" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49374.532611398994!2d139.66198618116837!3d35.718123234779696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2f56515665%3A0xda3bb35381d9bda9!2s2-ch%C5%8Dme-2-5%20Hyakuninch%C5%8D%2C%20Shinjuku%20City%2C%20T%C5%8Dky%C5%8D-to%20169-0073!5e0!3m2!1sen!2sjp!4v1598008151520!5m2!1sen!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact__form">
+            <form action="">
+                <div class="form__input-left">
+                    <div class="form-item">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="form-item">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <div class="form-item">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form-item">
+                        <input type="tel" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="form__input-right">
+                    <div class="form-item">
+                        <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__content">
+            <div class="footer_copy-right">
+                <p class="text-description">&#169; 2017 Housing. All Rights Reserved | Design by <span>W3layouts</span></p>
+            </div>
+            <div class="footer__socials">
+                <a href="#contact"><i class="fab fa-facebook-f"></i></a>
+                <a href="#contact"><i class="fab fa-twitter"></i></a>
+                <a href="#contact"><i class="fa fa-rss"></i></a>
+                <a href="#contact"><i class="fab fa-weebly"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- BACK TO TOP -->
+    <a href="#" class="back_to_top cd-top text-replace js-cd-top"><img src="img/arrowup.png" alt=""></a>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
 <script src="libraries/Square/js/square1.min.js"></script>
+<script src="libraries/Backtotop-CodyHouse/js/util.js"></script>
+<script src="libraries/Backtotop-CodyHouse/js/main.js"></script>
+<script src="libraries/CoutingUp/js/jquery.countup.min.js"></script>
+<script src="libraries/lightbox2/js/lightbox.min.js"></script>
 <script src="js/main.js"></script>
 
 </html>

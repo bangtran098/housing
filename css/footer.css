@@ -1,0 +1,40 @@
+footer {
+    height: 80px;
+    background-color: #00cdce;
+}
+
+.footer__content {
+    width: 60%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_copy-right {
+    text-align: left;
+}
+
+.footer_copy-right .text-description {
+    font-weight: 700;
+}
+
+.footer_copy-right span {
+    color: rgb(199, 4, 4);
+}
+
+.footer__socials {
+
+}
+
+.footer__socials i {
+    color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    margin: 20px 10px;
+}

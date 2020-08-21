@@ -1,9 +1,5 @@
 .blog {
-    
-}
-
-.blog h2 {
-    /* margin: 20px 0; */
+    margin-top: 10px;    
 }
 
 .blog h3 {
@@ -23,6 +19,7 @@
 .blog__item-vertical {
     background-color: #efefef;
     padding-bottom: 20px;
+    transition: all .3s;
 }
 
 .blog__item-vertical img {
@@ -45,7 +42,6 @@
     color: #00cdce;
     font-size: 1.1rem;
     font-weight: 500;
-    padding-top: 10px;
 }
 
 .blog__item-vertical figcaption p:nth-child(2) {
@@ -81,10 +77,10 @@
 .blog__video i {
     color: white;
     text-align: center;
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -92,7 +88,7 @@
     right: 0;
     margin: auto;
     border-radius: 100%;
-    background-color: rgba(0, 205, 206, 0.6);
+    background-color: rgba(0, 206, 206, 0.425);
 }
 
 .blog__item-horizontal figcaption {
@@ -107,19 +103,17 @@
     padding: 30px;
 }
 
-/* .blog__item-horizontal figcaption .text-description {
-    color: white;
-    font-size: 0.7rem;
-    line-height: 25px;
-} */
-
 .blog__item-horizontal figcaption button {
     margin-top: 20px;
 }
 
+.blog__item-vertical:hover {
+    transform: scale(1.05);
+}
+
 .blog__video:hover i {
     animation-name: upDown;
-    animation-duration: 1.5s;
+    animation-duration: 1.2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     background-color: red;
