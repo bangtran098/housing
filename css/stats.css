@@ -1,11 +1,9 @@
 .stats {
     background-color: #00cdce;
     text-align: center;
-    /* padding: 40px 0; */
+    margin-top: 30px;
 }
-.stats h2 {
-    padding: 40px 0;
-} 
+
 .stats__number {
     width: 60%;
     margin: 0 auto;

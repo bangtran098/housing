@@ -1,9 +1,15 @@
 .blog {
-
+    
 }
 
 .blog h2 {
-    padding: 40px 0;
+    /* margin: 20px 0; */
+}
+
+.blog h3 {
+    font-size: 2rem;
+    padding: 30px 0;
+    font-weight: 500;
 } 
 
 .blog__list-vertical {
@@ -58,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 60px 0;
+    margin-top: 40px;
 }
 
 .blog__item-horizontal .blog__video {
@@ -101,11 +107,11 @@
     padding: 30px;
 }
 
-.blog__item-horizontal figcaption .text-description {
+/* .blog__item-horizontal figcaption .text-description {
     color: white;
     font-size: 0.7rem;
     line-height: 25px;
-}
+} */
 
 .blog__item-horizontal figcaption button {
     margin-top: 20px;
