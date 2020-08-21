@@ -61,9 +61,32 @@
     margin: 60px 0;
 }
 
-.blog__item-horizontal img {
+.blog__item-horizontal .blog__video {
     width: 40%;
     height: 320px;
+    position: relative;
+}
+
+.blog__video img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog__video i {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 100%;
+    background-color: rgba(0, 205, 206, 0.6);
 }
 
 .blog__item-horizontal figcaption {
@@ -71,13 +94,14 @@
     height: 320px;
     padding: 0 70px;
     text-align: center;
+    width: 60%;
 }
 
 .blog__item-horizontal figcaption h2 {
     padding: 30px;
 }
 
-.blog__item-horizontal figcaption p {
+.blog__item-horizontal figcaption .text-description {
     color: white;
     font-size: 0.7rem;
     line-height: 25px;
@@ -85,4 +109,21 @@
 
 .blog__item-horizontal figcaption button {
     margin-top: 20px;
+}
+
+.blog__video:hover i {
+    animation-name: upDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: red;
+}
+
+@keyframes upDown {
+    0% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.4);
+    }
 }
