@@ -17,15 +17,12 @@ footer {
 }
 
 .footer_copy-right .text-description {
+    padding: 27px 0;
     font-weight: 700;
 }
 
 .footer_copy-right span {
     color: rgb(199, 4, 4);
-}
-
-.footer__socials {
-
 }
 
 .footer__socials i {

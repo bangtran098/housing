@@ -24,6 +24,7 @@
     border: none;
     outline: none;
     width: 100%;
+    font-size: 0.5rem;
     background-color: #efefef;
 }
 
@@ -43,7 +44,7 @@
 }
 
 .form__input-right .form-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-color: #efefef;
 
 }
@@ -51,9 +52,10 @@
     resize: none;
     border: none;
     width: 100%;
-    height: 100%;
-    padding: 10px 10px;
+    height: 140px;
+    padding: 10px ;
     outline: none;
+    font-size: 0.5rem;
     background-color: #efefef;
 }
 

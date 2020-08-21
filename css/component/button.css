@@ -9,8 +9,8 @@ button {
 
 .back_to_top {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 30px;
+    right: 30px;
     visibility: hidden;
     opacity: 0;
 }
@@ -22,15 +22,4 @@ button {
 
 .cd-top--fade-out {
     opacity: .5;
-}
-
-.back_to_top i{
-    width: 40px;
-    height: 40px;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 35px;
-    color: #0BBBCC;
-    border: 2px solid #0BBBCC;
-    border-radius: 100%;
 }
