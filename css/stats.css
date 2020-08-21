@@ -1,0 +1,27 @@
+.stats {
+    background-color: #00cdce;
+    text-align: center;
+    /* padding: 40px 0; */
+}
+.stats h2 {
+    padding: 40px 0;
+} 
+.stats__number {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.stats__number p:nth-child(1) {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.stats__number p:nth-child(2) {
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
